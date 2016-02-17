@@ -14,6 +14,7 @@
 		BB69A67A1C56D114007D2B20 /* Assignment01Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB69A6791C56D114007D2B20 /* Assignment01Tests.swift */; };
 		BB69A6841C56DEBD007D2B20 /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB69A6831C56DEBD007D2B20 /* Student.swift */; };
 		BB810C9F1C728C1900983E77 /* StudentEntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB810C9E1C728C1900983E77 /* StudentEntryViewController.swift */; };
+		BBB9FBF61C74E45800F37D97 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB9FBF51C74E45800F37D97 /* SwiftyJSON.swift */; };
 		BBCEBB241C70F24600C69588 /* ClassRoster.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBCEBB231C70F24600C69588 /* ClassRoster.swift */; };
 		BBCEBB281C70F87800C69588 /* StudentTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBCEBB271C70F87800C69588 /* StudentTableViewController.swift */; };
 		BBCEBB2E1C71010D00C69588 /* StudentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBCEBB2D1C71010D00C69588 /* StudentTableViewCell.swift */; };
@@ -42,6 +43,7 @@
 		BB69A6791C56D114007D2B20 /* Assignment01Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assignment01Tests.swift; sourceTree = "<group>"; };
 		BB69A6831C56DEBD007D2B20 /* Student.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
 		BB810C9E1C728C1900983E77 /* StudentEntryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentEntryViewController.swift; sourceTree = "<group>"; };
+		BBB9FBF51C74E45800F37D97 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 		BBCEBB231C70F24600C69588 /* ClassRoster.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassRoster.swift; sourceTree = "<group>"; };
 		BBCEBB271C70F87800C69588 /* StudentTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StudentTableViewController.swift; path = ../StudentTableViewController.swift; sourceTree = "<group>"; };
 		BBCEBB2D1C71010D00C69588 /* StudentTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentTableViewCell.swift; sourceTree = "<group>"; };
@@ -136,6 +138,7 @@
 			isa = PBXGroup;
 			children = (
 				BBCEBB231C70F24600C69588 /* ClassRoster.swift */,
+				BBB9FBF51C74E45800F37D97 /* SwiftyJSON.swift */,
 				BB69A6831C56DEBD007D2B20 /* Student.swift */,
 			);
 			name = Classes;
@@ -256,6 +259,7 @@
 				BBCEBB241C70F24600C69588 /* ClassRoster.swift in Sources */,
 				BBCEBB2E1C71010D00C69588 /* StudentTableViewCell.swift in Sources */,
 				BB810C9F1C728C1900983E77 /* StudentEntryViewController.swift in Sources */,
+				BBB9FBF61C74E45800F37D97 /* SwiftyJSON.swift in Sources */,
 				BB69A6841C56DEBD007D2B20 /* Student.swift in Sources */,
 				BBCEBB281C70F87800C69588 /* StudentTableViewController.swift in Sources */,
 				BB69A6641C56D113007D2B20 /* AppDelegate.swift in Sources */,

@@ -1,37 +1,37 @@
 {
-  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "B181CE4C06056DD6AC225C4F02CA1B4060BD9225+++7579CA7",
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "EB62DCE3988600858ACF8A2FAE2F97552432386B+++191E04D",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
 
   },
   "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
-    "B181CE4C06056DD6AC225C4F02CA1B4060BD9225+++CDCC332" : 0,
-    "B181CE4C06056DD6AC225C4F02CA1B4060BD9225+++C14CAEF" : 0,
-    "B181CE4C06056DD6AC225C4F02CA1B4060BD9225+++7579CA7" : 0
+    "B181CE4C06056DD6AC225C4F02CA1B4060BD9225+++859DD65" : 0,
+    "EB62DCE3988600858ACF8A2FAE2F97552432386B+++191E04D" : 0,
+    "B181CE4C06056DD6AC225C4F02CA1B4060BD9225+++E85FF34" : 0
   },
   "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "FE9BBD98-67D0-4381-8EBD-191E599DE94E",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
-    "B181CE4C06056DD6AC225C4F02CA1B4060BD9225+++CDCC332" : "..",
-    "B181CE4C06056DD6AC225C4F02CA1B4060BD9225+++C14CAEF" : "..",
-    "B181CE4C06056DD6AC225C4F02CA1B4060BD9225+++7579CA7" : "assignment1-jfarrin1\/"
+    "B181CE4C06056DD6AC225C4F02CA1B4060BD9225+++859DD65" : "",
+    "EB62DCE3988600858ACF8A2FAE2F97552432386B+++191E04D" : "Assignment01\/",
+    "B181CE4C06056DD6AC225C4F02CA1B4060BD9225+++E85FF34" : "..\/.."
   },
   "DVTSourceControlWorkspaceBlueprintNameKey" : "Assignment01",
   "DVTSourceControlWorkspaceBlueprintVersion" : 204,
-  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Assignment01\/Assignment01.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Assignment01.xcodeproj",
   "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
     {
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/NDMobileApps\/assignment1-jfarrin1.git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
-      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "B181CE4C06056DD6AC225C4F02CA1B4060BD9225+++7579CA7"
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "B181CE4C06056DD6AC225C4F02CA1B4060BD9225+++859DD65"
     },
     {
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/NDMobileApps\/assignment1-jfarrin1.git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
-      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "B181CE4C06056DD6AC225C4F02CA1B4060BD9225+++C14CAEF"
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "B181CE4C06056DD6AC225C4F02CA1B4060BD9225+++E85FF34"
     },
     {
-      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/NDMobileApps\/assignment1-jfarrin1.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/jfarrin1\/Assignment03.git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
-      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "B181CE4C06056DD6AC225C4F02CA1B4060BD9225+++CDCC332"
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "EB62DCE3988600858ACF8A2FAE2F97552432386B+++191E04D"
     }
   ]
 }

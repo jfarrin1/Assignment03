@@ -16,7 +16,7 @@ class NewStudentEntryViewController: UIViewController {
     @IBOutlet weak var FirstName: UITextView!
     
     @IBOutlet weak var LastName: UITextView!
-    
+ 
     @IBOutlet weak var Home: UITextView!
     
     @IBOutlet weak var Emoji: UITextView!

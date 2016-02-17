@@ -299,7 +299,7 @@
                         <outlet property="Classification" destination="dR0-hM-UnN" id="KRR-2R-Jbz"/>
                         <outlet property="Emoji" destination="YqJ-7u-z35" id="POw-4Y-RBE"/>
                         <outlet property="FirstName" destination="hNb-7S-TjR" id="tyz-tX-yOQ"/>
-                        <outlet property="Home" destination="YqJ-7u-z35" id="3B0-kq-XP7"/>
+                        <outlet property="Home" destination="Y5Y-V7-bhf" id="Ij3-Fr-304"/>
                         <outlet property="LastName" destination="q2P-Ht-vPf" id="CRX-F4-5Ev"/>
                     </connections>
                 </viewController>

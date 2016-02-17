@@ -12,8 +12,10 @@ import MapKit
 
 class StudentEntryViewController: UIViewController, MKMapViewDelegate {
 
-    var longitude: CLLocationDegrees = 0.0
-    var latitude: CLLocationDegrees = 0.0
+    var longitude: CLLocationDegrees = -86.25198979999
+    var latitude: CLLocationDegrees = 41.6763545
+    var latString: String = ""
+    var longString: String = ""
     var locationManager = CLLocationManager()
     var resultJSON : String = "" {
         didSet {
@@ -23,11 +25,13 @@ class StudentEntryViewController: UIViewController, MKMapViewDelegate {
     
     func parseJSONResponse( data : NSData ) -> Void {
         let json = JSON(data: data)
-        for (_, geometry) in json["results"]["formatted_address"] {
-            longitude = geometry["location"]["lng"].value //value?
-            latitude = geometry["location"]["lng"].value //?
-        }
+        
+        let latString = json[0]["results"]["geometry"]["location"]["lng"].stringValue
+        latitude = (latString as NSString).doubleValue
+        let longString = json[0]["results"]["geometry"]["location"]["lat"].stringValue
+        longitude = (longString as NSString).doubleValue
     }
+    
     
     var student1:student?
 
@@ -55,20 +59,16 @@ class StudentEntryViewController: UIViewController, MKMapViewDelegate {
         Birthday.text = student1?.birthday
         Classification.text = student1?.Classification
         
-        locationManager.requestWhenInUseAuthorization()
+        //locationManager.requestWhenInUseAuthorization()
         StudentMap.mapType = .Standard
-        let center = CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
-        let width = 1000.0
-        let height = 1000.0
-        let region = MKCoordinateRegionMakeWithDistance(center,width,height)
-        StudentMap.setRegion(region, animated: true)
+   
        
         //Search for hometown
 
         
-        if let searchTerm = student1?.Home{
+        if let searchTerm = Hometown.text{
             
-            let url = NSURL(string: "https://maps.googleapis.com/maps/api/geocode/json?address=\(searchTerm)&key=AIzaSyCcfIlhGAkRMPZQWSxToiYOKZiG4bVz36CU")
+            let url = NSURL(string: "https://maps.googleapis.com/maps/api/geocode/json?address=\(searchTerm)&key=AIzaSyCcfIhGAkRMPZQWSxToiYOKZiG4bVz36CU")
             let request = NSMutableURLRequest(URL: url!)
             
             let session = NSURLSession.sharedSession()
@@ -89,6 +89,11 @@ class StudentEntryViewController: UIViewController, MKMapViewDelegate {
             task.resume()
             
         }
+        let center = CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
+        let width = 1000.0
+        let height = 1000.0
+        let region = MKCoordinateRegionMakeWithDistance(center,width,height)
+        StudentMap.setRegion(region, animated: true)
         
     }
 
