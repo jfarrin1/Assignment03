@@ -12,8 +12,22 @@ import MapKit
 
 class StudentEntryViewController: UIViewController, MKMapViewDelegate {
 
-    
+    var longitude: CLLocationDegrees = 0.0
+    var latitude: CLLocationDegrees = 0.0
     var locationManager = CLLocationManager()
+    var resultJSON : String = "" {
+        didSet {
+            print("setting output as \(resultJSON)")
+        }
+    }
+    
+    func parseJSONResponse( data : NSData ) -> Void {
+        let json = JSON(data: data)
+        for (_, geometry) in json["results"]["formatted_address"] {
+            longitude = geometry["location"]["lng"].value //value?
+            latitude = geometry["location"]["lng"].value //?
+        }
+    }
     
     var student1:student?
 
@@ -43,24 +57,14 @@ class StudentEntryViewController: UIViewController, MKMapViewDelegate {
         
         locationManager.requestWhenInUseAuthorization()
         StudentMap.mapType = .Standard
+        let center = CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
+        let width = 1000.0
+        let height = 1000.0
+        let region = MKCoordinateRegionMakeWithDistance(center,width,height)
+        StudentMap.setRegion(region, animated: true)
+       
         //Search for hometown
-        
-        var resultJSON : String = "" {
-            didSet {
-                print("setting output as \(resultJSON)")
-            }
-        }
-        
-        var longitude: CLLocationDegrees
-        var latitude: CLLocationDegrees
-        
-        func parseJSONResponse( data : NSData ) -> Void {
-            let json = JSON(data: data)
-            for (_, geometry) in json["results"]["formatted_address"] {
-                longitude = geometry["location"]["lng"]
-                latitude = geometry["location"]["lng"]
-            }
-        }
+
         
         if let searchTerm = student1?.Home{
             
